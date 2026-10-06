@@ -6,7 +6,7 @@ RUN apt-get update && \
     apt-get install -y ffmpeg && \
     rm -rf /var/lib/apt/lists/*
 
-RUN pip install uv
+RUN pip install uv fastapi uvicorn httpx
 
 COPY . .
 
