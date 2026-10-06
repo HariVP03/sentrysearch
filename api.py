@@ -1,4 +1,4 @@
-```python
+
 import os
 import json
 import uuid
@@ -354,4 +354,3 @@ def delete_video(
         "success": True,
         "video_id": video_id,
     }
-```
