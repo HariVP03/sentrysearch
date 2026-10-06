@@ -15,4 +15,4 @@ RUN uv tool install --python 3.12 .
 ENV PATH="/root/.local/bin:$PATH"
 ENV HOME="/data"
 
-CMD ["sentrysearch", "--help"]
+CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8080"]
